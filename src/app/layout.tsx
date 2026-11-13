@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 
@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   title: "Nirob.dev",
   description:
     "Explore the portfolio of Md Toukir Uz Zaman Nirob, a frontend developer passionate about building modern and user-friendly web applications.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
